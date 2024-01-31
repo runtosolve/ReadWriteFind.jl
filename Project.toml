@@ -1,0 +1,4 @@
+name = "ReadWriteFind"
+uuid = "6e1ff3fe-52ba-4718-9baa-43b124cc059a"
+authors = ["Cris Moen <cris.moen@runtosolve.com>"]
+version = "0.1.0"
