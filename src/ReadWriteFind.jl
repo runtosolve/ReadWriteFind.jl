@@ -73,5 +73,14 @@ function get_specific_string_chunk(string_chunk, search_name_start, start_offset
 
 end
 
+#Read file to IO buffer, UInt8 bitstream:
+function read_to_io(filename::AbstractString, io::IO)
+    open(filename, "r") do src_io
+        while !eof(src_io)
+            write(io, read(src_io, UInt8))
+        end
+    end
+end
+
 
 end # module ReadWriteFind
