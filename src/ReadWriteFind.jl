@@ -13,6 +13,8 @@ function find_target_line_in_text_file(target_string, lines)
 
     end
 
+    return []
+
 end
 
 function read_text_file(filename)
